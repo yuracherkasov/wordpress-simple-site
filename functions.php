@@ -12,6 +12,11 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
+function mythem_enqueue_style() {
+	wp_enqueue_style( 'style', get_template_directory_uri(). '/css/main.css' );
+	}
+	add_action( 'wp_enqueue_scripts', 'mythem_enqueue_style' );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -93,10 +98,12 @@ function icu_care_setup() {
 	add_theme_support(
 		'custom-logo',
 		array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 342,
+			'width'       => 1238,
 			'flex-width'  => true,
 			'flex-height' => true,
+			'header-text'          => array( 'site-title', 'site-description' ),
+			'unlink-homepage-logo' => true, 
 		)
 	);
 }

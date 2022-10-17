@@ -10,23 +10,19 @@
  */
 
 ?>
+<table>
+	<tr>
+		<td class="TdFooter" colspan=3 align=center>
+			<div id="Footer">
+				<br />
+				Copyright 2014 Atlantic Health System | <a href="http://www.atlantichealth.org/atlantic/privacy+policy">Privacy
+					Policy</a> | <a href="http://www.atlantichealth.org/atlantic/disclaimer">Disclaimer</a> | Last Updated On August
+				11, 2014
+			</div>
+		</td>
+	</tr>
+</table>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'icu-care' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'icu-care' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'icu-care' ), 'icu-care', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
