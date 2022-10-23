@@ -21,17 +21,19 @@
 </head>
 
 <body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<table class="wrapper" cellpadding="0" cellspacing="0" width="75%">
-	<tr>
-		<td colspan=3>
-			<?php
+	<?php wp_body_open(); ?>
+	<table class="wrapper" cellpadding="0" cellspacing="0" width="75%">
+		<tr>
+			<td colspan=3>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+					<?php
 			$custom_logo_id = get_theme_mod( 'custom_logo' );
 			$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
 			if ( has_custom_logo() ) {
 				echo '<img src="' . esc_url( $logo[0] ) . '" alt="' . get_bloginfo( 'name' ) . '" style="height:120px;margin:20px;">';
 			}
 			?>
-		</td>
-	</tr>
-</table>
+				</a>
+			</td>
+		</tr>
+	</table>

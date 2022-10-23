@@ -19,19 +19,17 @@ get_header();
 	<tr>
 		<td class="LeftNav" style="vertical-align:top">
 			<h2>Visitor Information </h2>
-			<div style="padding-right: 20px;" id="LeftMenu">
-				<ul>
-					<li><a href="Meet_the_team.html">Meet the Team </a></li>
-					<li><a href="http://www.icu-usa.com/icu_medical_library.html">Medical Information </a></li>
-					<li><a href="http://www.icu-usa.com/what_outcomes.html">Outcomes and Options </a></li>
-					<li><a href="http://www.icu-usa.com/what_will_happen.html">What Will Happen </a></li>
-					<li><a href="http://www.icu-usa.com/questions.html">Questions You Should Always Ask</a></li>
-					<li><a href="https://www.surveymonkey.com/r/DF6NFTT/">Please Take Our Survey </li>
-					<li><a href="http://www.morristown-nj.org/">http://www.morristown-nj.org/</a></li>
-					<li><a href="Helpful_links.html">Helpful Links </a></li>
+			<nav style="padding-right: 20px;" id="LeftMenu">
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-1',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+				?>
+			</nav>
 
-				</ul>
-			</div>
 		</td>
 		<td class="CenterContent">
 			<div id="centerContentDiv">

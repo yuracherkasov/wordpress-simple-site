@@ -12,3 +12,9 @@ a:hover {
 
 }
 p {font-family: arial}
+
+#primary-menu {
+	list-style: none;
+	margin: 0;
+  padding: 0;
+}
